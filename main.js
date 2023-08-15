@@ -1,7 +1,9 @@
 const { app, BrowserWindow } = require('electron');
 
+let win;
+
 function createWindow() {
-  const win = new BrowserWindow({
+  win = new BrowserWindow({
     width: 800,
     height: 600,
     webPreferences: {
@@ -9,7 +11,7 @@ function createWindow() {
     }
   });
 
-  win.loadFile('index.html');
+  win.loadURL(`file://${__dirname}/dist/my-angular-app/index.html`);
 }
 
 app.whenReady().then(createWindow);
@@ -21,7 +23,7 @@ app.on('window-all-closed', () => {
 });
 
 app.on('activate', () => {
-  if (BrowserWindow.getAllWindows().length === 0) {
+  if (win === null) {
     createWindow();
   }
 });
