@@ -11,7 +11,8 @@ function createWindow() {
     }
   });
 
-  win.loadURL(`file://${__dirname}/dist/my-angular-app/index.html`);
+  win.loadFile(__dirname + '/dist/fastroll/index.html');
+  win.webContents.openDevTools();
 }
 
 app.whenReady().then(createWindow);
@@ -26,4 +27,5 @@ app.on('activate', () => {
   if (win === null) {
     createWindow();
   }
+
 });
