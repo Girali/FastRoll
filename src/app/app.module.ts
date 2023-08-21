@@ -7,6 +7,7 @@ import { MenuComponent } from './menu/menu.component';
 import { MenuItemComponent } from './menu-item/menu-item.component';
 import { TooltipComponent } from './common/ui/tooltip/tooltip.component';
 import { TooltipDirective } from './common/ui/tooltip/tooltip.directive';
+import { SvgIconComponent } from './common/svg-icon/svg-icon.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { TooltipDirective } from './common/ui/tooltip/tooltip.directive';
     MenuItemComponent,
     TooltipComponent,
     TooltipDirective,
+    SvgIconComponent,
   ],
   imports: [
     BrowserModule,
