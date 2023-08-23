@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, EventEmitter, Output } from '@angular/core';
 
 
 @Component({
@@ -7,5 +7,11 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./menu-item.component.css']
 })
 export class MenuItemComponent {
+  @Input() targetId: string = '';
   @Input() iconType: string  = '';
+  @Output() clickEvent = new EventEmitter<string>();
+
+  click() {
+    this.clickEvent.emit(this.targetId);
+  }
 }

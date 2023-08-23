@@ -1,1 +1,28 @@
-<app-menu></app-menu>
+<div class="flex flex-row w-full h-full">
+    <app-menu (panelEvent)="togglePanel($event)"></app-menu>
+
+    <app-menu-panel id="panel1">
+        <div panel-header>Header for Panel 1</div>
+        <div panel-content>Content for Panel 1</div>
+    </app-menu-panel>
+    <app-menu-panel id="panel2">
+        <div panel-header>Header for Panel 2</div>
+        <div panel-content>Content for Panel 2</div>
+    </app-menu-panel>
+    <app-menu-panel id="panel3">
+        <div panel-header>Header for Panel 3</div>
+        <div panel-content>Content for Panel 3</div>
+    </app-menu-panel>
+    <app-menu-panel id="panel4">
+        <div panel-header>Header for Panel 4</div>
+        <div panel-content>Content for Panel 4</div>
+    </app-menu-panel>
+    <app-menu-panel id="panel5">
+        <div panel-header>Header for Panel 5</div>
+        <div panel-content>Content for Panel 5</div>
+    </app-menu-panel>
+    <app-menu-panel id="panel6">
+        <div panel-header>Header for Panel 6</div>
+        <div panel-content>Content for Panel 6</div>
+    </app-menu-panel>
+</div>

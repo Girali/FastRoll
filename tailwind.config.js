@@ -8,6 +8,9 @@ module.exports = {
   },
   content: [],
   theme: {
+    dropShadow: { 
+      'br': '4px 4px 8px #000000',
+    },
     colors:{
       'gray-forest': {
         100: '#F6F9F2',

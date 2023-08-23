@@ -21,7 +21,6 @@ export class SvgIconComponent {
   }
 
   get iconPath(): string {
-    console.log(this.icons[this.iconType]);
     return this.icons[this.iconType] || '';
   }
 }

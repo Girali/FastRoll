@@ -1,14 +1,15 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
+import { MenuPanelComponent } from '../menu-panel/menu-panel.component';
 
 @Component({
   selector: 'app-menu',
-  templateUrl: './menu.component.html'
+  templateUrl: './menu.component.html',
+  styleUrls: ['./menu.component.css']
 })
 export class MenuComponent {
-  menuItems = [
-    { path: '/', label: 'Home' },
-    { path: '/about', label: 'About' },
-    { path: '/contact', label: 'Contact' },
-    // ... add more menu items as needed
-  ];
+  @Output() panelEvent = new EventEmitter<string>();
+
+  panelButtonEvent(s: string) {
+    this.panelEvent.emit(s);
+  }
 }
