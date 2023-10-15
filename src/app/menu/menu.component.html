@@ -1,8 +1,6 @@
-<div class="flex flex-col w-fit h-full border-r border-dirt-850 bg-dirt-950 drop-shadow-br z-10">
-    <app-menu-item (clickEvent)="panelButtonEvent($event)" targetId="panel1" iconType="users"></app-menu-item>
-    <app-menu-item (clickEvent)="panelButtonEvent($event)" targetId="panel2" iconType="volume"></app-menu-item>
-    <app-menu-item (clickEvent)="panelButtonEvent($event)" targetId="panel3" iconType="scale"></app-menu-item>
-    <app-menu-item (clickEvent)="panelButtonEvent($event)" targetId="panel4" iconType="globe"></app-menu-item>
-    <app-menu-item (clickEvent)="panelButtonEvent($event)" targetId="panel5" iconType="zap"></app-menu-item>
-    <app-menu-item (clickEvent)="panelButtonEvent($event)" targetId="panel6" iconType="settings"></app-menu-item>
-</div>
+<app-menu-item (clickEvent)="panelButtonEvent($event)" targetId="panel1" tooltip="Info about the action1" iconType="users"></app-menu-item>
+<app-menu-item (clickEvent)="panelButtonEvent($event)" targetId="panel2" tooltip="Info about the action2" iconType="volume"></app-menu-item>
+<app-menu-item (clickEvent)="panelButtonEvent($event)" targetId="panel3" tooltip="Info about the action3" iconType="scale"></app-menu-item>
+<app-menu-item (clickEvent)="panelButtonEvent($event)" targetId="panel4" tooltip="Info about the action4" iconType="globe"></app-menu-item>
+<app-menu-item (clickEvent)="panelButtonEvent($event)" targetId="panel5" tooltip="Info about the action5" iconType="zap"></app-menu-item>
+<app-menu-item (clickEvent)="panelButtonEvent($event)" targetId="panel6" tooltip="Info about the action6" iconType="settings"></app-menu-item>

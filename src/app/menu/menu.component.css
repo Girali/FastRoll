@@ -1,0 +1,7 @@
+:host{
+    @apply flex flex-col border-r border-dirt-850 bg-dirt-950 drop-shadow-br z-10 w-16;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+}

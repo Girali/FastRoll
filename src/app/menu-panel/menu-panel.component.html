@@ -1,11 +1,11 @@
-<div *ngIf="expanded" class="relative flex flex-col bg-gray-forest-850 border-dirt-300 w-40 h-40 rounded-r-md border-y border-r p-3 drop-shadow-br -z-10">
+<div *ngIf="expanded" class="absolute flex flex-col bg-gray-forest-850 border-dirt-300 w-40 h-40 rounded-r-md border-y border-r p-3 drop-shadow-br -z-10">
     <div class="text-dirt-300">
         <ng-content select="[panel-header]"></ng-content>
     </div>
     <div class="text-dirt-300">
         <ng-content select="[panel-content]"></ng-content>
     </div>
-    <div (click)="toggleContent(false)" class="absolute top-4 -right-2 bg-dirt-300 rounded-l-md hover:-right-3 ">
+    <div (click)="toggleContent(false)" tooltip="Close" class="absolute top-4 -right-2 bg-dirt-300 rounded-l-md hover:-right-3 ">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class=" w-6 h-6 stroke-gray-forest-850 hover:stroke-gray-forest-400">
             <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
         </svg>

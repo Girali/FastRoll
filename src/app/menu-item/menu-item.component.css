@@ -1,0 +1,4 @@
+:host{
+    @apply drop-shadow-br;
+    z-index: -10;
+}
